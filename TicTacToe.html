@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic-Tac-Toe</title>
+</head>
+
+<!--Later will implament gameplay when learning java script-->
+
+<!--This creates the stle of the board-->
+<style>
+	body{
+		background-color: lightgrey;
+	}
+
+	h1{
+		text-align: center;
+	}
+	
+	table{
+		margin: auto;
+	}
+
+	td{
+		width: 150px;
+		height: 150px;
+
+	}
+
+	.horizontal{
+		border-top: 2px solid black;
+		border-bottom: 2px solid black;
+		float: 0;
+	}
+
+	.vertical{
+		border-left: 2px solid black;
+		border-right: 2px solid black;
+		float: 0;
+	}
+</style>
+
+<!--this is the body/structure of the board-->
+<body>
+<h1>Tic-Tac-Toe Board</h1>
+<table>
+	<tr>
+		<td></td>
+		<td class="vertical"></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td class="horizontal"></td>
+		<td class="horizontal vertical"></td>
+		<td class="horizontal"></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td class="vertical"></td>
+		<td></td>
+	</tr>
+</table>
+</body>
+</html>

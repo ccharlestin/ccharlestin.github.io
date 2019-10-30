@@ -2,54 +2,107 @@
 <html>
 <head>
 	<title>Charles Website</title>
-	<link rel="stylesheet" type="text/css" href="colors.css">
+	<!--<link rel="stylesheet" type="text/css" href="colors.css">-->
+	<!--Base template for website-->
+	<link rel="stylesheet" type="text/css" href="template.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<!--font-family: 'Montserrat', sans-serif; -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+	<!--font-family: 'Quicksand', sans-serif;-->
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap" rel="stylesheet">
+	<!--Konami code (For special effects)-->
+	<script src="konami.js"></script>
 </head>
 
-<div>
+
 <body>
-<p>	Hello world! This is my first website that I'm creating. It's a work in progress, so this will get better </p>
-</div>
 
-<p><a href="First_File.html">To First_File.html</a></p>
-<p><a href="registration.html">To registration.html</a></p>
-
-<!--<img src="https://i.redd.it/b87fmekipkr31.jpg"> -->
-
-<input type="time" name="Name">
-<input type="color" name="Number">
-<input type="tel" name="">
-<input type="hidden" name="">
-<input type="password" name="">
-
-<h3>Site Building Blocks</h3>
-<ol>
-	<li>About <span>me</span> section</li>
-	<li>Education
-		<ul>
-			<li>School</li>
-			<li>Classes</li>
-		</ul>
-	</li>
-	<li>Interest
-		<ul>
-			<li>Goals</li>
-		</ul>
-	</li>
-	<li>Skills
-		<ul>
-			<li>Tech skills</li>
-			<li>Grill skills</li>
-		</ul>
-	</li>
-</ol>
-
-<p>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<h1 class="sections">About Me</h1>
+<p>My name is Charles Charlestin III. I am a sophomore computer science student. This website is my very first personal project. It's still a massive work in progress, but as time goes by this site will be way better. My overall goal with this website is to give an insight on who I am and what things I'm into personally and professionally. 
 </p>
+
+<hr>
+
+<h1 class="sections">Experience</h1>
+<h3>Newell Hall Learning Commons</h3>
+<ul>
+	<li>Collaborated with student workers to effectively maintain order.</li>
+	<li>Handled and resolve outside student conflicts.</li>
+	<li>Implemented new technologies and techniques to help benefit the student body.</li>
+	<p>For more info about Newell Hall <a href="https://newell.dso.ufl.edu/">click here.</a></p>
+</ul>
+
+<h3>SouthTech Academy</h3>
+
+<ul>
+	<li>Planned and implemented computer systems in the school that successfully monitored and allowed students to efficiently complete school related work.</li>
+	<li>Assisted teachers and students with technical issues and troubleshooting.</li>
+	<li>Repaired and maintained computer systems, mobile devices, and peripherals. </li>
+</ul>
+	<p>For more info about SouthTech Academy <a href="https://www.southtechschools.org/index.html">click here.</a></p>
+<h3>Palm Beach County School District</h3>
+<ul>
+	<li>Collaborated with student teams to test and fix computer systems across Palm Beach County schools which increased overall efficiently by 11% for the 2017-2018 school year.</li>
+	<li>Collaborated with experience information technology mentors to solve complex issues.</li>
+	<li>Worked across 273 public schools and facilities across Palm Beach County to implement new technologies to increase production.</li>
+</ul>
+	<p>For more info about Palm Beach County Schools <a href="https://www.palmbeachschools.org/">click here.</a></p>
+<hr>
+
+
+<h1 class="sections">Education</h1>
+<h3>University of Florida</h3>
+<h4>Computer Science</h4>
+<h4>CS Related Classes</h4>
+<ul>
+	<li>Programming Fundamentals 1 (Java)</li>
+	<li>Programming Fundamentals 2 (C++)</li>
+	<li>Discrete Structure</li>
+	<li>Data Structures and Algorithms</li>
+	<li>Introduction to Computer Organiations</li>
+</ul>
+
+<hr>
+
+
+<h1 class="sections">Projects</h1>
+<p>Project lol this <span>is</span> my project.</p>
+<p>Other projects will be listed here soon.</p>
+<hr>
+
+
+<h1 class="sections">Skills</h1>
+<ul>
+	<li>Java</li>
+	<li>C++</li>
+	<li>Python</li>
+	<li>HTML5</li>
+	<li>CSS3</li>
+	<li>Bootstrap 4</li>
+</ul>
+<hr>
+
+<h1 class="sections">Contact</h1>
+<p>If you want to get in touch, feel free to email me. My email is ccharlestin@gmail.com. I'll try to respond to you as soon as possible.</p>
+
+<h1 class="sections">Suggestions</h1>
+<p>Please feel free to make any suggestions for the improvement of my website.</p>
+
+<label for="name_textbox">Your Name</label>
+  <textarea class="form-control rounded-0" id="name_textbox" rows="1"></textarea>
+
+<div class="form-group">
+  <label for="suggestion_textbox">Suggestions</label>
+  <textarea class="form-control rounded-0" id="suggestion_textbox" rows="10"></textarea>
+</div>
+<button class="btn btn-default"> Submit</button>
+
+
+<p><a href="TicTacToe.html">Tic-Tac-Toe *Out of order*</a></p>
+<!--<p><a href="First_File.html">To First_File.html</a></p>
+<p><a href="registration.html">To registration.html</a></p> -->
+
+<p id="footer">Copyright © 2019 CHARLES CHARLESTIN III</p>
+
 </body>
 </html>

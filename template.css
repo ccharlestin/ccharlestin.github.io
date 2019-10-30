@@ -1,0 +1,35 @@
+body{
+border: 20px solid lightgrey;
+margin: auto;
+}
+
+span{
+	font-weight: 5px;
+	font-size: 50px;
+}
+
+.sections{
+	text-align: center;
+	font-family: Montserrat, sans-serif; 
+}
+
+#base{
+	
+	background: lightblue;
+	font-family: Quicksand, sans-serif;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-right: auto;
+    margin-left: auto;
+}
+
+#footer{
+	background-color: transparent;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    color: #a9aebb;
+}
