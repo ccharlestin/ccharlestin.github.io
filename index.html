@@ -5,7 +5,14 @@
 	<!--<link rel="stylesheet" type="text/css" href="colors.css">-->
 	<!--Base template for website-->
 	<link rel="stylesheet" type="text/css" href="template.css">
+	<!--jQuery CDN-->
+	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <!--Bootstrap-->
+  	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  	<!--Bootstrap-->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	
 	<!--font-family: 'Montserrat', sans-serif; -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 	<!--font-family: 'Quicksand', sans-serif;-->
@@ -13,17 +20,47 @@
 	<!--Konami code (For special effects)-->
 	<script src="konami.js"></script>
 </head>
-
-
 <body>
 
-<h1 class="sections">About Me</h1>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#experience">Experience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#education">Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#projects">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#skills">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+</nav>
+
+<!--This div container is for the document spacing -->
+<div class="container">
+<h1 class="sections" name="about">About</h1>
 <p>My name is Charles Charlestin III. I am a sophomore computer science student. This website is my very first personal project. It's still a massive work in progress, but as time goes by this site will be way better. My overall goal with this website is to give an insight on who I am and what things I'm into personally and professionally. 
 </p>
 
 <hr>
 
-<h1 class="sections">Experience</h1>
+<h1 class="sections"><a name="experience">Experience</h1>
 <h3>Newell Hall Learning Commons</h3>
 <ul>
 	<li>Collaborated with student workers to effectively maintain order.</li>
@@ -50,7 +87,7 @@
 <hr>
 
 
-<h1 class="sections">Education</h1>
+<h1 class="sections"><a name="education">Education</h1>
 <h3>University of Florida</h3>
 <h4>Computer Science</h4>
 <h4>CS Related Classes</h4>
@@ -65,13 +102,13 @@
 <hr>
 
 
-<h1 class="sections">Projects</h1>
+<h1 class="sections"><a name="projects">Projects</h1>
 <p>Project lol this <span>is</span> my project.</p>
 <p>Other projects will be listed here soon.</p>
 <hr>
 
 
-<h1 class="sections">Skills</h1>
+<h1 class="sections"><a name="skills">Skills</h1>
 <ul>
 	<li>Java</li>
 	<li>C++</li>
@@ -82,8 +119,11 @@
 </ul>
 <hr>
 
-<h1 class="sections">Contact</h1>
+<h1 class="sections"><a name="contact"></a>Contact</h1>
 <p>If you want to get in touch, feel free to email me. My email is ccharlestin@gmail.com. I'll try to respond to you as soon as possible.</p>
+
+
+
 
 <h1 class="sections">Suggestions</h1>
 <p>Please feel free to make any suggestions for the improvement of my website.</p>
@@ -95,9 +135,9 @@
   <label for="suggestion_textbox">Suggestions</label>
   <textarea class="form-control rounded-0" id="suggestion_textbox" rows="10"></textarea>
 </div>
-<button class="btn btn-default"> Submit</button>
+<button class="btn btn-disabled"> Submit</button>
 
-
+</div>
 <p><a href="TicTacToe.html">Tic-Tac-Toe *Out of order*</a></p>
 <!--<p><a href="First_File.html">To First_File.html</a></p>
 <p><a href="registration.html">To registration.html</a></p> -->
