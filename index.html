@@ -2,7 +2,14 @@
 <html>
 <head>
 	<title>Charles Website</title>
-	<!--<link rel="stylesheet" type="text/css" href="colors.css">-->
+	<!--Keywords for search engines -->
+	<meta name="keywords" content="Charles, Charlestin, UF, Computer Science">
+	<!--Website description-->
+	<meta name="description" content="Charles Charlestin III personal website">
+	<!--Author of website -->
+	<meta name="author" content="Charles Charlestin III">
+	<!--Sets viewport for compatbility for most devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!--Base template for website-->
 	<link rel="stylesheet" type="text/css" href="template.css">
 	<!--jQuery CDN-->
@@ -22,9 +29,9 @@
 </head>
 <body>
 
-
+<!-- Add fixed-top to the end of nav class to make the navigation bar move as you scroll (Currently not added)-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Home</a>
+  <!--<a class="navbar-brand" href="#">Home</a>-->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -50,6 +57,11 @@
         <a class="nav-link" href="#contact">Contact</a>
       </li>
     </ul>
+	</div>
+	 <span class="navbar-text">
+       <button type="button" class="btn btn-default btn-sm"><a class="nav-link" href="ResumeCharlesCharlestinIII.pdf"  target="_blank">Resume</a></button>
+    </span>
+    
 </nav>
 
 <!--This div container is for the document spacing -->
@@ -89,58 +101,66 @@
 
 <h1 class="sections"><a name="education">Education</h1>
 <h3>University of Florida</h3>
-<h4>Computer Science</h4>
-<h4>CS Related Classes</h4>
-<ul>
-	<li>Programming Fundamentals 1 (Java)</li>
-	<li>Programming Fundamentals 2 (C++)</li>
-	<li>Discrete Structure</li>
-	<li>Data Structures and Algorithms</li>
-	<li>Introduction to Computer Organiations</li>
-</ul>
+<h5>Major: Computer Science</h4>
+<h5>Minor: Digital Arts and Science</h4>
+<h5>CS Related Classes</h4>
+	<ul>
+		<button type="button" class="btn btn-light">Programming Fundamentals 1 (Java)</button>
+		<button type="button" class="btn btn-light">Programming Fundamentals 2 (C++)</button>
+		<button type="button" class="btn btn-light">Discrete Structure</button>
+		<button type="button" class="btn btn-light">Data Structures and Algorithms</button>
+		<button type="button" class="btn btn-light">Introduction to Computer Organiations</button>
+		<button type="button" class="btn btn-light">Computational Linear Algebra</button>
+	</ul>
+
 
 <hr>
 
 
 <h1 class="sections"><a name="projects">Projects</h1>
-<p>Project lol this <span>is</span> my project.</p>
-<p>Other projects will be listed here soon.</p>
+<p>Projects will be listed here soon.</p>
+
 <hr>
 
-
 <h1 class="sections"><a name="skills">Skills</h1>
-<ul>
-	<li>Java</li>
-	<li>C++</li>
-	<li>Python</li>
-	<li>HTML5</li>
-	<li>CSS3</li>
-	<li>Bootstrap 4</li>
-</ul>
+	<ul>
+		<button type="button" class="btn btn-light">Java</button>
+		<button type="button" class="btn btn-light">C++</button>
+		<button type="button" class="btn btn-light">Python</button>
+		<button type="button" class="btn btn-light">HTML5</button>
+		<button type="button" class="btn btn-light">CSS3</button>
+		<button type="button" class="btn btn-light">Bootstrap 4</button>
+	</ul>
+	
+
 <hr>
 
 <h1 class="sections"><a name="contact"></a>Contact</h1>
 <p>If you want to get in touch, feel free to email me. My email is ccharlestin@gmail.com. I'll try to respond to you as soon as possible.</p>
 
 
-
+<hr>
 
 <h1 class="sections">Suggestions</h1>
 <p>Please feel free to make any suggestions for the improvement of my website.</p>
 
-<label for="name_textbox">Your Name</label>
-  <textarea class="form-control rounded-0" id="name_textbox" rows="1"></textarea>
+<form>
+	<fieldset disabled>
+	<div class="form-group">
+		<label for="name_textbox">Your Name</label>
+  		<textarea name="name" class="form-control rounded-0" id="name_textbox" placeholder="Currently out of order"></textarea>
+	</div>	
+	<div class="form-group">
+  		<label for="suggestion_textbox">Suggestions</label>
+  		<textarea class="form-control rounded-0" id="suggestion_textbox" name="suggestion"rows="5" placeholder="Currently out of order"></textarea>
+	</div>
 
-<div class="form-group">
-  <label for="suggestion_textbox">Suggestions</label>
-  <textarea class="form-control rounded-0" id="suggestion_textbox" rows="10"></textarea>
-</div>
-<button class="btn btn-disabled"> Submit</button>
+	<button class="btn btn-disabled"> Submit</button>
 
-</div>
+	</fieldset>
+</form>
+
 <p><a href="TicTacToe.html">Tic-Tac-Toe *Out of order*</a></p>
-<!--<p><a href="First_File.html">To First_File.html</a></p>
-<p><a href="registration.html">To registration.html</a></p> -->
 
 <p id="footer">Copyright © 2019 CHARLES CHARLESTIN III</p>
 
